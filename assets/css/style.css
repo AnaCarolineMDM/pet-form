@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Concert+One&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;1,100&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --default-border: 0.2rem solid rgba(36, 36, 36, 0.253);
+}
+
+body{
+    font-size: 'Concert One', monospace;
+    font-size: 1.4em;
+}
+
+.content{
+    display: grid;
+    grid-template-areas:
+        ". . . . ."
+        ". hero . form ."
+        ". hero . form ."
+        ". . . . ."
+    ;
+    gap: 4.5rem;
+
+}
+
+main{
+    grid-area: form;
+}
+
+
+aside{
+    grid-area: hero;
+
+}
+
+
+
+
+
+aside h1{
+    font-family: 'Agbalumo', monospace;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+aside h1 span, main h2 span{
+    color: #4988cf;
+}
+
+main h2{
+    word-spacing: -2px;
+}
+
+aside img{
+    width: 400px;
+}
+
+main{
+    width: 60rem;
+    height: 52rem;
+    border: var(--default-border);
+    padding: 4.4rem 5.7rem;
+    border-radius: 1.2rem;
+}
+
+
+.cadastro{
+
+    width: 60rem;
+    height: 52rem;
+    border: var(--default-border);
+    padding: 0.4rem 5.7rem;
+    border-radius: 1.2rem;
+}
+
+main h2{
+    font-family: 'Concert One', monospace;
+    max-width: 58rem;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 2.5rem;
+}
+
+
+main .actions{
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+main .actions a{
+    border-radius: 1.2rem;
+    text-decoration: none;
+    height: 5.5rem;
+    background-color: #4988cf;
+    font-family: 'Concert One', monospace;
+    font-size: 2.4rem;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5rem;
+}
+
+main .actions a + a {
+    background-color: rgb(255, 194, 115);
+    margin-top: 1rem;
+    position: relative;
+}
+
+main a{
+    transition: transform 200ms ease-in-out;
+}
+
+a:hover{
+    transform: scale(1.02);
+}
+
+main header{
+    display: flex;
+    align-items: center;
+    gap: 0 1.2rem;
+}
+
+main header i{
+    font-size: 1.7rem;
+    margin-top: 3rem;
+
+}
+
+
+main footer p{
+    font-family: 'Concert One', monospace;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 6rem;
+
+}
+
+
+main footer a{
+    font-family: 'Concert One', monospace;
+    color: #3970af;
+    font-size: 1.8rem;
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    
+}
+
+
+ main form{
+    margin-top: 1.6rem;
+ }
+
+main form label{
+    font-family: 'Concert One', monospace;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    padding-left: 1.8rem;
+    margin-top: 1rem;
+}
+
+
+main form input, main form select  {
+    width: 489px;
+    height: 4.5rem;
+    display: block;
+    
+    background: #fff;
+    border: var(--default-border);
+    border-radius: 2.5rem;
+    padding: 1.4rem;
+}
+
+main form select{
+    appearance: none;
+
+}
+
+main form .select-div{
+    position: relative;
+}
+
+main form .select-div::after{
+        top: 1.3rem;
+        left: 45.3rem;
+        font-size: 1.8rem;
+        content: '\f078';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 600;
+        position: absolute;
+        z-index: 1;
+        color: #3970af;
+}
+
+main form input .points{
+    position: relative;
+}
+
+main form input + button{
+    position: absolute;
+    right: 14rem;
+    top: 37rem;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.verificando {
+    margin-top: 5rem;
+}
